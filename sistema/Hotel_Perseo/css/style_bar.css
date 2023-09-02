@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Victor+Mono:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    padding: 22px 0;
+    width: 940px;
+    font-family: 'Montserrat', sans-serif;
+    background: #F0F0F0;
+
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    float: left;
+}
+
+.logo:hover {
+    transform: scale(1.5);
+}
+
+.titulo {
+    font-size: 40px;
+    color: #929292;
+    margin-top: 20px;
+    padding-left: 60px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+
+}
+
+/* Menu */
+nav {
+    margin-top: 50px;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    /* Centra horizontalmente */
+    transform: translateX(-50%);
+    /* Centra horizontalmente */
+    width: 100%;
+    background: #39A900;
+    font-family: 'Victor Mono', monospace;
+}
+
+.navegacion {
+    width: 100%;
+    height: 40px;
+    align-content: center;
+    padding-left: 0;
+    /* Cambiado a 0 para centrar */
+    text-align: center;
+    /* Centra el contenido del menú */
+}
+
+.navegacion ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu>li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu>li>a {
+    display: block;
+    padding: 10px 20px;
+    color: #eff1ea;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #39ed0c;
+    transition: all .3s;
+}
+
+/* Submenu */
+.submenu {
+    position: absolute;
+    width: 180px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    background: linear-gradient(to left, rgb(143, 146, 137), #2a2b29);
+    align-content: center;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    color: #ecf1ec;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Seccion de articulos */
+
+.contenedor {
+    width: 90%;
+    display: flex;
+    margin: 150px 9px 30px
+}
+
+
+
+.articulo {
+    display: flex;
+    width: 900px;
+     /* column-count: 2;  */
+    column-gap: 50px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.titulo2 {
+    font-size: 30px;
+    color: #929292;
+    margin: 0 0 30px 0;
+    padding-left: 10px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+.titulo3 {
+    font-size: 20px;
+    color: #929292;
+    margin: 0 0 30px 0;
+    padding-left: 22px;
+    font-family: 'Oswald', sans-serif;
+    text-align: start;
+
+}
+
+.subtitulo {
+    margin: 20px 0 30px 0;
+    font-size: 30px;
+    color: #929292;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.publicado {
+    font-size: 18px;
+    font-style: 'Oswald', sans-serif;
+    color: gray;
+
+}
+
+.publicado a {
+    font-style: 'Oswald', sans-serif;
+    color: gray;
+
+}
+
+.articulo p {
+    text-align: justify;
+
+
+}
+
+.articulo li {
+    text-align: left;
+
+}
+
+.articulo img {
+    margin: 20px 0px 20px 180px;
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.cont_principal{
+    width: 75%;
+}
+
+aside{
+    width: 25%;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+aside li a {
+    display: block;
+    padding: 3px 0px 0px 10px;
+    color: #000000;
+    text-decoration: none;
+    text-align: justify;
+}
+
+aside a:hover{
+    color: #39A900;
+}
+
+
+/* Estilos Footer */
+footer {
+    margin-top: 50px;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    /* Centra horizontalmente */
+    transform: translateX(-50%);
+    /* Centra horizontalmente */
+    width: 100%;
+    font-family: 'Victor Mono', monospace;
+}
+
+
+.pie_pag{
+    /* width: 100%; */
+    display: table;
+    background-color: #858484;
+    position: absolute;
+    padding-bottom: 8px;
+
+}
+
+.pie_pag section{
+    display: table-cell;
+    width: 20%;
+    /* text-align: center; */
+    padding-left: 90px;
+    position: relative;
+
+}
+.pie_pag  section h3{
+    color: #ffffff;
+    text-align: justify;
+}
+.pie_pag section p {
+    text-align: justify;
+
+}
+
+
+.pie_pag section a {
+    text-align: justify;
+    color: #000;
+
+}
+
+.pie_pag section ul {
+    list-style: none;
+    text-align: justify;
+}
+
+.pie_pag a:hover{
+    color: #39A900;
+}
+
+.redes i{
+    margin-top: 10px;
+    font-size: 30px;
+    padding-right: 10px;
+    padding-left: 50px;
+}
