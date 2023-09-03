@@ -326,3 +326,32 @@ footer {
     padding-right: 10px;
     padding-left: 50px;
 }
+
+/* Aplicar estilos en dispositivos móviles con un ancho máximo de 876px para el footer y el menú */
+@media (max-width: 876px) {
+    .pie_pag {
+        position: static;
+        /* Cambiar la posición a estática para que ocupen todo el ancho */
+        transform: none;
+        /* Reiniciar la transformación */
+        left: 0;
+        /* Alinear al borde izquierdo */
+        width: 100%;
+        /* Hacer que ocupen todo el ancho */
+    }
+}
+
+
+/* Aplicar estilos en dispositivos móviles con un ancho máximo de 876px para el menú */
+@media (max-width: 876px) {
+    .navegacion {
+        position: static;
+        /* Cambiar la posición a estática para que ocupe todo el ancho */
+        transform: none;
+        /* Reiniciar la transformación */
+        width: 100%;
+        /* Hacer que ocupe todo el ancho */
+        text-align: center;
+        /* Centrar el contenido del menú */
+    }
+}
