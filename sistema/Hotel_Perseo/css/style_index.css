@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     /*permite incluir el relleno y el borde en el ancho y alto total de un elemento*/
-    font-family: monospace;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -71,12 +71,11 @@ header span {
 
 header a:hover {
     color: #39A900;
-
 }
 
 .selected {
     color: #39A900;
-    transition: 3s;
+    transition: color 0.3s;
 }
 
 .icono_sistema img {
@@ -129,15 +128,16 @@ CONGIGURACION FORMULARIO
 
 /*este configuracion exclusiva para el formulario de la pagina de inicio*/
 #intro .formulario {
-
-    background-color: #e4dada;
-    width: 40%;
-    height: 250px;
+    background-color: white;
+    width: 30%;
+    height: 285px;
     padding-left: 40px;
     padding-right: 40px;
     color: #211f1f;
-    margin-left: 700px;
+    margin-left: 900px;
     margin-bottom: 80px;
+    border-radius: 15px;
+
 }
 
 /*este configuracion es para los elementos del formulario que usamos en las paginas del sitio*/
@@ -145,7 +145,7 @@ CONGIGURACION FORMULARIO
     color: #2d2567;
     text-align: center;
     padding: 10px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .formulario .info {
@@ -156,6 +156,7 @@ CONGIGURACION FORMULARIO
     display: block;
     color: #2d2567;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .info input {
@@ -165,8 +166,21 @@ CONGIGURACION FORMULARIO
     border-bottom: 1px solid #4d4343;
     padding: 5px;
     outline: none;
-    background-color: #e4dada;
+    background-color: white;
+    margin-top: 10px;
 }
+
+.info select {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #4d4343;
+    padding: 5px;
+    outline: none;
+    background-color: white;
+    margin-top: 10px;
+}
+
 
 .formulario .btn_enviar {
     background-color: #0b3b65;
@@ -176,9 +190,16 @@ CONGIGURACION FORMULARIO
     padding: 7px;
     font-size: 16px;
     font-weight: bold;
+    margin-left: 80px;
+    border-radius: 12px;
 }
 
+/* Division de Servicios */
+#servicios {
+    background-size: cover;
+    background-image: url(/sistema/Hotel_Perseo/imgs/index_hotel/boquemonte.jpg);
 
+}
 
 #servicios h2 {
     text-align: center;
@@ -190,26 +211,27 @@ CONGIGURACION FORMULARIO
     margin: auto;
     display: flex;
     justify-content: space-between;
+
 }
 
 #servicios .servicio1 {
-    background-image: url(../img/sitio/piscina.jpg);
+    background-image: url(../imgs/index_hotel/servivio1.jpg);
 }
 
 #servicios .servicio2 {
-    background-image: url(../img/sitio/restaurante.jpg);
+    background-image: url(../imgs/index_hotel/servivio2.jpg);
 }
 
 #servicios .servicio3 {
-    background-image: url(../img/sitio/bar.jpg);
+    background-image: url(../imgs/index_hotel/servivio3.jpg);
 }
 
 #servicios .servicio4 {
-    background-image: url(../img/sitio/spa.jpg);
+    background-image: url(../imgs/index_hotel/servivio4.jpg);
 }
 
 #servicios .servicio5 {
-    background-image: url(../img/sitio/room_service.jpg);
+    background-image: url(../imgs/index_hotel/servivio5.jpg);
 }
 
 /*configuracion del acordeon*/
@@ -219,7 +241,7 @@ CONGIGURACION FORMULARIO
     height: 400px;
     background-size: cover;
     background-position: center center;
-    margin: 0 10px;
+    margin: 100px 10px;
     transition: .7s;
     position: relative;
     border-radius: 5px;
@@ -258,4 +280,251 @@ CONGIGURACION FORMULARIO
 #servicios .item:hover .titulo {
     bottom: -20px;
     opacity: 1;
+}
+
+/* Division Contactanos */
+/* Estilos CSS */
+#contactanos {
+    background-size: cover;
+    background-image: url(/sistema/Hotel_Perseo/imgs/index_hotel/salto_teque.jpg);
+}
+
+#contactanos .formulario {
+    background-color: white;
+    width: 30%;
+    padding: 20px;
+    color: #211f1f;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contactanos .formulario .info {
+    margin-bottom: 20px;
+}
+
+/* Campos del registro */
+#contactanos .info input[type="text"],
+#contactanos .info input[type="email"] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #4d4343;
+    padding: 5px;
+    outline: none;
+    background-color: white;
+}
+
+#contactanos .info textarea {
+    width: 100%;
+    height: 100px;
+    /* Ajusta la altura según sea necesario */
+    border: none;
+    border-bottom: 1px solid #4d4343;
+    padding: 5px;
+    outline: none;
+    background-color: white;
+}
+
+#contactanos .info label {
+    display: block;
+    color: #2d2567;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#contactanos .formulario .btn_enviar {
+    background-color: #0b3b65;
+    display: block;
+    border: none;
+    color: #e2dddd;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+/* Estilos para la sección de datos */
+#contactanos .datos {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    color: #211f1f;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+    margin-top: 20px;
+
+}
+
+
+#contactanos .datos .item {
+    width: 25%;
+
+
+}
+
+#contactanos .datos .item .icono {
+    color: rgb(42, 120, 223);
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+#contactanos .datos .item .iconod {
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+#contactanos .datos .item .iconow {
+    color: #39A900;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+#contactanos .datos .item .datos_ h2,
+h3 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+
+
+
+
+
+
+
+
+/* Division  de registro */
+
+#registro {
+    background-size: cover;
+    background-image: url(/sistema/Hotel_Perseo/imgs/index_hotel/boquemonteAtar.jpg);
+}
+
+/*este configuracion exclusiva para el formulario de la pagina de registro*/
+#registro .formulario {
+    background-color: white;
+    width: 30%;
+    height: 710px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #211f1f;
+    margin-left: 700px;
+    margin-bottom: 70px;
+    border-radius: 15px;
+
+}
+
+
+#registro .formulario h3 {
+    color: #2d2567;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+
+#registro .formulario .info {
+    width: 50%;
+    margin-bottom: 20px;
+    margin: auto;
+    margin-top: 40px;
+
+}
+
+#registro .formulario .info2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 130px;
+}
+
+/* Campos del registro */
+#registro .info input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #4d4343;
+    padding: 5px;
+    outline: none;
+    background-color: white;
+}
+
+#registro .info label {
+    display: block;
+    color: #2d2567;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+
+#registro .form-check input[type="checkbox"] {
+    width: auto;
+    /* Ancho automático */
+    border: none;
+    outline: none;
+    background-color: #e4dada;
+    margin-right: 10px;
+}
+
+
+#registro .formulario .btn_enviar {
+    background-color: #0b3b65;
+    display: block;
+    border: none;
+    color: #e2dddd;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    /* Centra el texto dentro del botón */
+    width: 40%;
+    /* Establece el ancho del botón al 50% */
+    margin: auto;
+    margin-top: 20px;
+    /* Centra el botón horizontalmente en el formulario */
+    border-radius: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 876px) {
+    .header {
+        position: static;
+        /* Cambiar la posición a estática para que ocupen todo el ancho */
+        transform: none;
+        /* Reiniciar la transformación */
+        left: 0;
+        /* Alinear al borde izquierdo */
+        width: 100%;
+        /* Hacer que ocupen todo el ancho */
+    }
 }

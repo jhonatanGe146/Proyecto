@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="/sistema/Hotel_Perseo/css/style_index.css">
     <title>Hotel Perseo</title>
 </head>
@@ -39,7 +41,7 @@
                     </div>
                     <div class="info">
                         <label for="">Usuario</label>
-                        <input type="text" required>
+                        <input type="text" class="form-control" id="validationCustom01" value="" required>
                     </div>
                     <div class="info">
                         <label for="">Contraseña</label>
@@ -58,44 +60,44 @@
         <h2>Nuestros Servicios</h2>
         <div class="contenedor">
             <div class="item servicio1">
-                <div class="overlay">
-                    <a href="../Hotel_Perseo/paginas/servicios/piscina.html">
+                <a href="./paginas/servicios/piscina.html">
+                    <div class="overlay">
                         <h2>Piscina</h2>
-                    </a>
-
-                </div>
+                    </div>
+                </a>
             </div>
 
             <div class="item servicio2">
-                <div class="overlay">
-                    <a href="./restaurante.html">
+                <a href="./paginas/servicios/restaurante.html">
+                    <div class="overlay">
                         <h2>Restaurante</h2>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
 
             <div class="item servicio3">
-                <div class="overlay">
-                    <a href="/sistema/Hotel_Perseo/paginas/servicios/bar.html">
+                <a href="./paginas/servicios/bar.html">
+                    <div class="overlay">
                         <h2>Bar</h2>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
 
             <div class="item servicio4">
-                <div class="overlay">
-                    <a href="./spa.html">
+                <a href="./paginas/servicios/spa.html">
+                    <div class="overlay">
                         <h2>Spa</h2>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
 
             <div class="item servicio5">
-                <div class="overlay">
-                    <a href="./room_service.html">
+                <a href="./paginas/servicios/room_service.html">
+                    <div class="overlay">
+
                         <h2>Room Service</h2>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -139,63 +141,6 @@
     <!-- Seccion Contactanos -->
     <section id="contactanos" class="bloque">
         <div class="contenedor">
-            <div class="datos">
-                <!-- Contenedor de los datos Direccion-->
-                <div class="item">
-                    <!-- Contenedor icono -->
-                    <div class="icono">
-                        <i class="fa-sharp fa-solid fa-location-dot"></i>
-
-                    </div>
-                    <!-- Contenedor info -->
-                    <div class="datos_dir">
-                        <h2>Dirección</h2>
-                        <h3>Calle 13 # 10 - 93, Soacha, Cundinamarca</h3>
-                    </div>
-                </div>
-
-                <!-- Contenedor de los datos Telefono -->
-                <div class="item">
-                    <!-- Contenedor icono -->
-                    <div class="icono">
-                        <i class="fa-solid fa-phone"></i>
-
-                    </div>
-                    <!-- Contenedor info -->
-                    <div class="datos_tel">
-                        <h2>Telefono</h2>
-                        <h3>(57)-601-5461500</h3>
-                    </div>
-                </div>
-
-                <!-- Contenedor de los datos Email -->
-                <div class="item">
-                    <!-- Contenedor icono -->
-                    <div class="icono">
-                        <i class="fa-solid fa-envelope"></i>
-
-                    </div>
-                    <!-- Contenedor info -->
-                    <div class="datos_email">
-                        <h2>Email</h2>
-                        <h3>servicioalciudadanosena@gmail.com</h3>
-                    </div>
-                </div>
-
-                <!-- Contenedor de los datos What -->
-                <div class="item">
-                    <!-- Contenedor icono -->
-                    <div class="icono">
-                        <i class="fa-brands fa-whatsapp"></i>
-
-                    </div>
-                    <!-- Contenedor info -->
-                    <div class="datos_what">
-                        <h2>Whatsapp</h2>
-                        <h3>23123424</h3>
-                    </div>
-                </div>
-            </div>
             <div class="formulario">
                 <form action="#intro">
                     <div>
@@ -224,6 +169,65 @@
                     </div>
                 </form>
             </div>
+
+            <div class="datos">
+                <!-- Contenedor de los datos Direccion-->
+                <div class="item">
+                    <!-- Contenedor icono -->
+                    <div class="iconod">
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+
+                    </div>
+                    <!-- Contenedor info -->
+                    <div class="datos_">
+                        <h2>Dirección</h2>
+                        <h3>Calle 13 # 10 - 93, Soacha, Cundinamarca</h3>
+                    </div>
+                </div>
+
+                <!-- Contenedor de los datos Telefono -->
+                <div class="item">
+                    <!-- Contenedor icono -->
+                    <div class="icono">
+                        <i class="fa-solid fa-phone"></i>
+
+                    </div>
+                    <!-- Contenedor info -->
+                    <div class="datos_">
+                        <h2>Telefono</h2>
+                        <h3>(57)-601-5461500</h3>
+                    </div>
+                </div>
+
+                <!-- Contenedor de los datos Email -->
+                <div class="item">
+                    <!-- Contenedor icono -->
+                    <div class="icono">
+                        <i class="fa-solid fa-envelope"></i>
+
+                    </div>
+                    <!-- Contenedor info -->
+                    <div class="datos_">
+                        <h2>Email</h2>
+                        <h3>servicioalciudadanosena@gmail.com</h3>
+                    </div>
+                </div>
+
+                <!-- Contenedor de los datos What -->
+                <div class="item">
+                    <!-- Contenedor icono -->
+                    <div class="iconow">
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </div>
+                    <!-- Contenedor info -->
+                    <div class="datos_">
+                        <h2>Whatsapp</h2>
+                        <h3>23123424</h3>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -233,7 +237,7 @@
             <div class="formulario">
                 <form action="#intro">
                     <div>
-                        <h3>Regsitrar</h3>
+                        <h3>Registrar</h3>
                     </div>
                     <div class="info">
                         <label for="">Nombre</label>
@@ -260,10 +264,10 @@
 
                     <div class="info">
                         <label for="">Nro Documento</label>
-                        <input type="email" required>
+                        <input type="text" required>
                     </div>
 
-                    <div class="info">
+                    <div class="info2">
                         <input type="checkbox">
                         <label for="">Aceptar Terminos y Condiciones </label>
                     </div>
@@ -275,7 +279,7 @@
         </div>
 
     </section>
-    <script src="./js/sistema.js"></script>
+    <script src="/sistema/Hotel_Perseo/js/sistema.js"></script>
 </body>
 
 </html>

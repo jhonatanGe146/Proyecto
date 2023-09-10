@@ -120,14 +120,14 @@ header a:hover {
 .cont_central .item .cont_bebida {
     border: white solid 2px;
     width: 100%;
-    height: 300px;
+    height: 210px;
     display: flex;
     flex-direction: column;
 }
 
 .cont_central .item .imgs_bar {
     width: 50%;
-    height: 60%;
+    height: 65%;
     display: block;
     /* Cambiamos a "display: block;" para mostrarlo inicialmente */
     margin: auto;
@@ -138,11 +138,12 @@ header a:hover {
     width: 100%;
     height: 100%;
     background-size: cover;
+    border-radius: 10px;
 }
 
 .cont_central .item .descripcion {
     width: 100%;
-    height: 30%;
+    height: 35%;
     display: block;
     margin: auto;
     padding: 10px;
@@ -154,7 +155,7 @@ header a:hover {
 
 .cont_central .item .descripcion p {
     font-size: 18px;
-    text-align: center;
+    text-align: justify;
     padding-top: 10px;
     padding-left: 20px;
     width: 100%;
