@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/sistema/Hotel_Perseo/css/style_index.css">
+    <title>Hotel Perseo</title>
+</head>
+
+<body>
+
+    <!-- Es el menu de navegación -->
+    <header>
+        <nav>
+            <a href="../index.html" onclick="seleccionar(this)">Blog</a>
+            <a href="#intro" onclick="seleccionar(this)" class="selected">Inicio</a>
+            <a href="#servicios" onclick="seleccionar(this)">Servicios</a>
+            <span class="icono_sistema">
+                <i><img src="../Imgs/logoverde.png" alt=""></i>
+            </span>
+            <a href="#reserva" onclick="seleccionar(this)">Reservas</a>
+            <a href="#contactanos" onclick="seleccionar(this)">Contactanos</a>
+            <a href="#registro" onclick="seleccionar(this)">Registro</a>
+        </nav>
+    </header>
+    <!-- Contenido del sitio -->
+    <!-- Seccion de introduccion -->
+    <section id="intro" class="bloque">
+        <div class="contenedor">
+            <h2> <strong> La Mejor Estancia De Su Viaje </strong> </h2>
+            <div class="formulario">
+                <form action="#servicios">
+                    <div>
+                        <h3>Iniciar Sesion</h3>
+                    </div>
+                    <div class="info">
+                        <label for="">Usuario</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="info">
+                        <label for="">Contraseña</label>
+                        <input type="password">
+                    </div>
+                    <div>
+                        <input type="submit" class="btn_enviar" value="Iniciar Sesion">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Seccion de Servicios -->
+    <section id="servicios" class="bloque">
+        <h2>Nuestros Servicios</h2>
+        <div class="contenedor">
+            <div class="item servicio1">
+                <div class="overlay">
+                    <a href="../Hotel_Perseo/paginas/servicios/piscina.html">
+                        <h2>Piscina</h2>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="item servicio2">
+                <div class="overlay">
+                    <a href="./restaurante.html">
+                        <h2>Restaurante</h2>
+                    </a>
+                </div>
+            </div>
+
+            <div class="item servicio3">
+                <div class="overlay">
+                    <a href="/sistema/Hotel_Perseo/paginas/servicios/bar.html">
+                        <h2>Bar</h2>
+                    </a>
+                </div>
+            </div>
+
+            <div class="item servicio4">
+                <div class="overlay">
+                    <a href="./spa.html">
+                        <h2>Spa</h2>
+                    </a>
+                </div>
+            </div>
+
+            <div class="item servicio5">
+                <div class="overlay">
+                    <a href="./room_service.html">
+                        <h2>Room Service</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion de Reservas -->
+    <section id="reserva" class="bloque">
+        <div class="contenedor">
+            <div>
+                <h2>¿Deseas Reservar?</h2>
+            </div>
+            <div class="contenedor">
+                <p>
+                    Las Presentes condiciones generales
+                </p>
+
+                <div class="item clausula">
+                    <div class="overlay">
+                        <a href="./paginas/reservas/clausulas.html">
+                            <h2>Clausula</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="item condiciones">
+                    <div class="overlay">
+                        <a href="./paginas/reservas/condiciones_pago.html">
+                            <h2>Condiciones de Pago</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="item reserva">
+                    <div class="overlay">
+                        <a href="./room_service.html">
+                            <h2>Reserva</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion Contactanos -->
+    <section id="contactanos" class="bloque">
+        <div class="contenedor">
+            <div class="datos">
+                <!-- Contenedor de los datos Direccion-->
+                <div class="item">
+                    <!-- Contenedor icono -->
+                    <div class="icono">
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+
+                    </div>
+                    <!-- Contenedor info -->
+                    <div class="datos_dir">
+                        <h2>Dirección</h2>
+                        <h3>Calle 13 # 10 - 93, Soacha, Cundinamarca</h3>
+                    </div>
+                </div>
+
+                <!-- Contenedor de los datos Telefono -->
+                <div class="item">
+                    <!-- Contenedor icono -->
+                    <div class="icono">
+                        <i class="fa-solid fa-phone"></i>
+
+                    </div>
+                    <!-- Contenedor info -->
+                    <div class="datos_tel">
+                        <h2>Telefono</h2>
+                        <h3>(57)-601-5461500</h3>
+                    </div>
+                </div>
+
+                <!-- Contenedor de los datos Email -->
+                <div class="item">
+                    <!-- Contenedor icono -->
+                    <div class="icono">
+                        <i class="fa-solid fa-envelope"></i>
+
+                    </div>
+                    <!-- Contenedor info -->
+                    <div class="datos_email">
+                        <h2>Email</h2>
+                        <h3>servicioalciudadanosena@gmail.com</h3>
+                    </div>
+                </div>
+
+                <!-- Contenedor de los datos What -->
+                <div class="item">
+                    <!-- Contenedor icono -->
+                    <div class="icono">
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </div>
+                    <!-- Contenedor info -->
+                    <div class="datos_what">
+                        <h2>Whatsapp</h2>
+                        <h3>23123424</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="formulario">
+                <form action="#intro">
+                    <div>
+                        <h3>Enviar Mensaje</h3>
+                    </div>
+                    <div class="info">
+                        <label for="">Nombre</label>
+                        <input type="text" required>
+                    </div>
+
+                    <div class="info">
+                        <label for="">Apellido</label>
+                        <input type="text" required>
+                    </div>
+
+                    <div class="info">
+                        <label for="">Email</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="info">
+                        <label for="">Mensaje</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" class="btn_enviar" value="Enviar Mensaje">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion de Registro -->
+    <section id="registro" class="bloque">
+        <div class="contenedor">
+            <div class="formulario">
+                <form action="#intro">
+                    <div>
+                        <h3>Regsitrar</h3>
+                    </div>
+                    <div class="info">
+                        <label for="">Nombre</label>
+                        <input type="text" required>
+                    </div>
+
+                    <div class="info">
+                        <label for="">Apellido</label>
+                        <input type="text" required>
+                    </div>
+
+                    <div class="info">
+                        <label for="">Email</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="info">
+                        <label for="">Tipo Documento</label>
+                        <select name="" id="">
+                            <option value="">Cedula Ciudadania</option>
+                            <option value="">Cedula Extrajeria</option>
+                            <option value="">Pasaporte</option>
+                        </select>
+                    </div>
+
+                    <div class="info">
+                        <label for="">Nro Documento</label>
+                        <input type="email" required>
+                    </div>
+
+                    <div class="info">
+                        <input type="checkbox">
+                        <label for="">Aceptar Terminos y Condiciones </label>
+                    </div>
+                    <div>
+                        <input type="submit" class="btn_enviar" value="Registrar">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <script src="./js/sistema.js"></script>
+</body>
+
+</html>

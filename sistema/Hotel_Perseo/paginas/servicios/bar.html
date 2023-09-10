@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar</title>
+    <link rel="icon" href="/sistema/Imgs/logoverde.png">
+    <link rel="stylesheet" href="/sistema/Hotel_Perseo/css/servicios_css/style_bar.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" onclick="seleccionar(this)">Blog</a>
+            <a href="/sistema/Hotel_Perseo/index_hotel.html" onclick="seleccionar(this)" class="selected">Inicio</a>
+            <a href="/sistema/Hotel_Perseo/index_hotel.html#servicios" onclick="seleccionar(this)">Servicios</a>
+            <span class="icono_sistema">
+                <i><img src="/sistema/Imgs/logoverde.png" alt=""></i>
+            </span>
+            <a href="#reserva" onclick="seleccionar(this)">Reservas</a>
+            <a href="#contactanos" onclick="seleccionar(this)">Contactanos</a>
+            <a href="#registro" onclick="seleccionar(this)">Registro</a>
+        </nav>
+    </header>
+
+
+    <div class="contenedor">
+        <div class="cont_lateral">
+            <h3 class="titulo3"> TRAGOS Y BEBIDAS </h3>
+            <div class="cont_banner">
+                <iframe src="/sistema/Hotel_Perseo/banners/banner.html" frameborder="0"></iframe>
+            </div>
+            <p class="parrafo">
+                Las bebidas preparadas y tragos de los bartenders derivan de algunas recetas sencillas con
+                tequila,
+                ginebra, ron o vodka. Se dice que si un barman puede hacer una margarita, daiquiri, una piña
+                colada
+                y un martini, debe ser capaz de hacer casi cualquier bebida coctelera que se le pida.</p>
+        </div>
+
+        <div class="cont_central">
+            <h3 class="titulo3">NUESTRO TOP DE BEBIDAS</h3>
+            <div class="item" onclick="toggleItem(this)">
+                <div class="bebida">
+                    <h3 class="titulo">El Mojito</h3>
+                </div>
+                <div class="cont_bebida">
+                    <div class="imgs_bar">
+                        <img src="/sistema/Hotel_Perseo/imgs/bar/8.jpg" alt="El Mojito">
+                    </div>
+                    <div class="descripcion">
+                        <p>Bebida cubana con ron, limón, azúcar, menta y soda.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" onclick="toggleItem(this)">
+                <div class="bebida">
+                    <h3 class="titulo">Cosmopolitan</h3>
+                </div>
+                <div class="cont_bebida">
+                    <div class="imgs_bar">
+                        <img src="/sistema/Hotel_Perseo/imgs/bar/7.jpg" alt="Cosmopolitan">
+                    </div>
+                    <div class="descripcion">
+                        <p>Cóctel con vodka, Triple Sec, jugo de arándano y limón.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" onclick="toggleItem(this)">
+                <div class="bebida">
+                    <h3 class="titulo">Margaritas</h3>
+                </div>
+                <div class="cont_bebida">
+                    <div class="imgs_bar">
+                        <img src="/sistema/Hotel_Perseo/imgs/bar/6.jpg" alt="Margaritas">
+                    </div>
+                    <div class="descripcion">
+                        <p>Preparada con tequila, Triple Sec, y lima o limón.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" onclick="toggleItem(this)">
+                <div class="bebida">
+                    <h3 class="titulo">Martini</h3>
+                </div>
+                <div class="cont_bebida">
+                    <div class="imgs_bar">
+                        <img src="/sistema/Hotel_Perseo/imgs/bar/5.jpg" alt="Martini">
+                    </div>
+                    <div class="descripcion">
+                        <p>Clásica con ginebra y vermut, a menudo con aceitunas</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" onclick="toggleItem(this)">
+                <div class="bebida">
+                    <h3 class="titulo">Mai Tai</h3>
+                </div>
+                <div class="cont_bebida">
+                    <div class="imgs_bar">
+                        <img src="/sistema/Hotel_Perseo/imgs/bar/9.jpg" alt="Mai Tai">
+                    </div>
+                    <div class="descripcion">
+                        <p>Bebida tropical con ron blanco y oscuro, cítricos y jarabes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" onclick="toggleItem(this)">
+                <div class="bebida">
+                    <h3 class="titulo">Caipirinha</h3>
+                </div>
+                <div class="cont_bebida">
+                    <div class="imgs_bar">
+                        <img src="/sistema/Hotel_Perseo/imgs/bar/10.jpg" alt="Caipirinha">
+                    </div>
+                    <div class="descripcion">
+                        <p>Brasileña, con cachaça, lima y azúcar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" onclick="toggleItem(this)">
+                <div class="bebida">
+                    <h3 class="titulo">Daiquiri</h3>
+                </div>
+                <div class="cont_bebida">
+                    <div class="imgs_bar">
+                        <img src="/sistema/Hotel_Perseo/imgs/bar/11.jpg" alt="Daiquiri">
+                    </div>
+                    <div class="descripcion">
+                        <p>A base de ron, puede ser de fresa, plátano u otras frutas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" onclick="toggleItem(this)">
+                <div class="bebida">
+                    <h3 class="titulo">Piña colada</h3>
+                </div>
+                <div class="cont_bebida">
+                    <div class="imgs_bar">
+                        <img src="/sistema/Hotel_Perseo/imgs/bar/12.jpg" alt="Piña colada">
+                    </div>
+                    <div class="descripcion">
+                        <p>Nacional de Puerto Rico, con ron, coco, crema y piña.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" onclick="toggleItem(this)">
+                <div class="bebida">
+                    <h3 class="titulo">Long Island Ice Tea</h3>
+                </div>
+                <div class="cont_bebida">
+                    <div class="imgs_bar">
+                        <img src="/sistema/Hotel_Perseo/imgs/bar/13.jpg" alt="Long Island Ice Tea">
+                    </div>
+                    <div class="descripcion">
+                        <p>Variada mezcla de licores con un toque de cola.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" onclick="toggleItem(this)">
+                <div class="bebida">
+                    <h3 class="titulo">White Russian</h3>
+                </div>
+                <div class="cont_bebida">
+                    <div class="imgs_bar">
+                        <img src="/sistema/Hotel_Perseo/imgs/bar/14.jpg" alt="White Russian">
+                    </div>
+                    <div class="descripcion">
+                        <p>Cóctel de vodka con crema y licor de café.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <aside>
+            <h3 class="titulo4">Servicios </h3>
+            <ul>
+                <li> <a href="/sistema/Hotel_Perseo/paginas/servicios/piscina.html">Servicio de Piscina</a></li>
+                <li> <a href="/sistema/Hotel_Perseo/paginas/servicios/restaurante.html"> Servicio de Restaurante</a>
+                </li>
+                <li> <a href="/sistema/Hotel_Perseo/paginas/servicios/room_service.html"> Room Service </a></li>
+                <li> <a href="/sistema/Hotel_Perseo/paginas/servicios/spa.html">Servicio de Spa </a></li>
+            </ul>
+            <br>
+            <br>
+
+            <h3 class="titulo4">Archivos</h3>
+            <ul>
+                <li> <a href="/sistema/piscina.html">Guia de alojamiento</a></li>
+            </ul>
+
+        </aside>
+    </div>
+
+
+    <script src="/sistema/Hotel_Perseo/js/sistema.js"></script>
+</body>
+
+</html>

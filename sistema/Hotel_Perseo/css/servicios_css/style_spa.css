@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Victor+Mono:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+:root {
+    --verde: #39A900;
+    --blanco: #F0F0F0;
+    --negro: #000000;
+    ;
+}
+
+body {
+    margin: auto;
+    width: 100%;
+    height: 850px;
+
+}
+
+
+/* Header */
+header {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+    width: 100%;
+    background-image: linear-gradient(to right, #0b3b65, rgb(79, 62, 62), #0b3b65);
+    text-align: center;
+}
+
+
+a {
+    display: inline-block;
+    margin: 0 20px;
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+header a:hover {
+    color: var(--verde);
+
+}
+
+
+.selected {
+    color: var(--verde);
+    transition: 3s;
+}
+
+.icono_sistema img {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+}
+
+/* Seccion de contenedor todo */
+
+.contenedor {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-image: url(/sistema/Hotel_Perseo/imgs/spa/fondo.jpg);
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+/* Contenido lateral */
+.cont_lateral {
+    width: 40%;
+    margin: auto;
+
+
+
+}
+
+/* Banner dinamico */
+.cont_banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont_banner iframe {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    /* Utiliza la unidad de viewport height (vh) para ocupar toda la altura de la pantalla */
+    border: none;
+    /* Elimina el borde del iframe si es necesario */
+}
+
+/* Contenedor central */
+.cont_central {
+    width: 40%;
+    display: block;
+
+
+}
+
+.cont_central .imgs {
+    width: 100%;
+    height: 200px;
+    display: flex;
+
+}
+
+.cont_central .imgs2 {
+    width: 100%;
+    height: 200px;
+    margin-left: 200px;
+
+}
+
+.cont_central .imgs2 img {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+
+}
+
+
+
+.cont_central .imgs_spa {
+    width: 50%;
+    height: 100%;
+
+
+}
+
+.cont_central .imgs_spa img {
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+
+}
+
+
+/* Contenido Lateral derecho */
+
+aside {
+    width: 20%;
+    margin: auto;
+
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    font-size: 23px;
+
+}
+
+
+aside li a {
+    display: block;
+    padding: 3px 0px 0px 10px;
+    color: var(--blanco);
+    text-decoration: none;
+    text-align: justify;
+}
+
+aside a:hover {
+    color: var(--verde);
+}
+
+
+
+
+
+/* Titulos */
+
+.titulo2 {
+    font-size: 50px;
+    color: var(--negro);
+    margin: 0 0 30px 0;
+    padding-left: 10px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    -webkit-text-stroke: 1px var(--blanco);
+}
+
+.titulo3 {
+    font-size: 35px;
+    color: var(--negro);
+    margin: 0 0 30px 0;
+    padding-left: 22px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    -webkit-text-stroke: 1px var(--blanco);
+
+}
+
+.titulo4 {
+    font-size: 35px;
+    color: var(--negro);
+    margin: 0 0 30px 0;
+    padding-left: 22px;
+    font-family: 'Oswald', sans-serif;
+    text-align: start;
+    -webkit-text-stroke: 1px var(--blanco);
+
+}
+
+/* Parrafos */
+
+.cont_central p {
+    font-size: 20px;
+    text-align: justify;
+    margin: auto;
+}
+
+p {
+    width: 90%;
+    text-align: justify;
+    color: var(--blanco);
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 25px;
+
+}
+
+.parrafo {
+    width: 70%;
+    margin: 0 0 0 110px;
+}
+
+@media (max-width: 876px) {
+    .header {
+        position: static;
+        /* Cambiar la posición a estática para que ocupen todo el ancho */
+        transform: none;
+        /* Reiniciar la transformación */
+        left: 0;
+        /* Alinear al borde izquierdo */
+        width: 100%;
+        /* Hacer que ocupen todo el ancho */
+    }
+}

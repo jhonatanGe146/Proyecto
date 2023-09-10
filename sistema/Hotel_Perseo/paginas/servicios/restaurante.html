@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="icon" href="/sistema/Imgs/logoverde.png">
+    <link rel="stylesheet" href="/sistema/Hotel_Perseo/css/servicios_css/style_restaurante.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" onclick="seleccionar(this)">Blog</a>
+            <a href="/sistema/Hotel_Perseo/index_hotel.html" onclick="seleccionar(this)" class="selected">Inicio</a>
+            <a href="/sistema/Hotel_Perseo/index_hotel.html#servicios" onclick="seleccionar(this)">Servicios</a>
+            <span class="icono_sistema">
+                <i><img src="/sistema/Imgs/logoverde.png" alt=""></i>
+            </span>
+            <a href="#reserva" onclick="seleccionar(this)">Reservas</a>
+            <a href="#contactanos" onclick="seleccionar(this)">Contactanos</a>
+            <a href="#registro" onclick="seleccionar(this)">Registro</a>
+        </nav>
+    </header>
+
+    <div class="contenedor">
+        <div class="cont_lateral">
+            <h3 class="titulo3">NUESTROS RESTAURANTES </h3>
+
+            <div class="cont_banner">
+                <iframe src="/sistema/Hotel_Perseo/banners/banner3.html" frameborder="0"></iframe>
+            </div>
+            <p class="parrafo">
+                A continuación te mostraremos los tipos de servicios en restaurantes y hoteles más comunes
+                que puedes encontrar, una clasificación esencial para entender cómo se brinda la atención al
+                cliente en diversos establecimientos culinarios. Estos tipos de servicios son:
+            </p>
+        </div>
+
+
+        <div class="cont_central">
+            <h3 class="titulo3">TIPOS DE RESTAURANTES</h3>
+            <div class="item" onclick="toggleItem(this)">
+                <div class="bebida">
+                    <h3 class="titulo">Servicio a la inglesa</h3>
+                </div>
+                <div class="cont_bebida">
+                    <div class="imgs_bar">
+                        <img src="/sistema/Hotel_Perseo/imgs/restaurante/1.1.jpg" alt="Servicio a la inglesa">
+                    </div>
+                    <div class="descripcion">
+                        <p>En este servicio, los camareros sirven la comida directamente en el plato del comensal desde
+                            una bandeja o fuente que llevan en su mano izquierda. Es considerado formal y elegante.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" onclick="toggleItem(this)">
+                <div class="bebida">
+                    <h3 class="titulo">Servicio a la francesa</h3>
+                </div>
+                <div class="cont_bebida">
+                    <div class="imgs_bar">
+                        <img src="/sistema/Hotel_Perseo/imgs/restaurante/2.1.jpg" alt="Servicio a la francesa">
+                    </div>
+                    <div class="descripcion">
+                        <p>El servicio a la francesa es tradicional y formal. La comida se presenta en bandejas o platos
+                            al comensal para que él mismo se sirva. Los platos se presentan por la derecha y se retiran
+                            por la izquierda.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" onclick="toggleItem(this)">
+                <div class="bebida">
+                    <h3 class="titulo">Servicio a la rusa o de gueridón</h3>
+                </div>
+                <div class="cont_bebida">
+                    <div class="imgs_bar">
+                        <img src="/sistema/Hotel_Perseo/imgs/restaurante/3.1.jpg"
+                            alt="Servicio a la rusa o de gueridón">
+                    </div>
+                    <div class="descripcion">
+                        <p>El servicio a la rusa se caracteriza por el uso de un carrito o gueridón donde se realizan
+                            los últimos preparativos del plato frente al comensal, como flambeado o fileteado. Es
+                            personalizado y espectacular, pero requiere habilidades específicas del camarero.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" onclick="toggleItem(this)">
+                <div class="bebida">
+                    <h3 class="titulo">Servicio a la americana o de emplatado</h3>
+                </div>
+                <div class="cont_bebida">
+                    <div class="imgs_bar">
+                        <img src="/sistema/Hotel_Perseo/imgs/restaurante/4.1.jpg"
+                            alt="Servicio a la americana o de emplatado">
+                    </div>
+                    <div class="descripcion">
+                        <p>El servicio a la americana es común en la actualidad. Los alimentos vienen servidos en el
+                            plato desde la cocina, y el camarero los lleva a la mesa. Es rápido y eficiente, pero menos
+                            formal y personalizado que los otros servicios.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <aside>
+            <h3 class="titulo4">Servicios </h3>
+            <ul>
+                <li> <a href="/sistema/Hotel_Perseo/paginas/servicios/bar.html">Servicio de Bar</a></li>
+                <li> <a href="/sistema/Hotel_Perseo/paginas/servicios/piscina.html"> Servicio de Piscina</a></li>
+                <li> <a href="/sistema/Hotel_Perseo/paginas/servicios/room_service.html"> Room Service </a></li>
+                <li> <a href="/sistema/Hotel_Perseo/paginas/servicios/spa.html">Servicio de Spa </a></li>
+            </ul>
+            <br>
+            <br>
+
+            <h3 class="titulo4">Archivos</h3>
+            <ul>
+                <li> <a href="/sistema/piscina.html">Guia de alojamiento</a></li>
+            </ul>
+
+        </aside>
+
+        <script src="/sistema/Hotel_Perseo/js/sistema.js"></script>
+
+    </div>
+</body>
+
+</html>
