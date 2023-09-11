@@ -204,6 +204,7 @@ CONGIGURACION FORMULARIO
 #servicios h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: white;
 }
 
 #servicios .contenedor {
@@ -282,8 +283,101 @@ CONGIGURACION FORMULARIO
     opacity: 1;
 }
 
+
+
+/*Division Reserva */
+
+
+#reserva {
+    background-size: cover;
+    background-image: url(/sistema/Hotel_Perseo/imgs/index_hotel/boquemonteAtar.jpg);
+}
+
+
+
+#reserva .contenedor {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#reserva h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+
+#reserva .clausula {
+    background-image: url(../imgs/index_hotel/clausula.jpg);
+}
+
+#reserva .condiciones {
+    background-image: url(../imgs/index_hotel/metodo.jpg);
+}
+
+#reserva .reserva {
+    background-image: url(../imgs/index_hotel/reserva.jpg);
+}
+
+
+
+/*configuracion del acordeon*/
+#reserva .item {
+    width: 25%;
+    /*el contenedor item pasa de 25% ancho con hover a 90% de ancho*/
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    margin: 100px 10px;
+    transition: .7s;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#reserva .item:hover {
+    width: 90%;
+}
+
+#reserva .overlay {
+    position: absolute;
+    background: linear-gradient(to bottom, transparent 80%, black);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#reserva .item .titulo {
+    position: absolute;
+    bottom: -10px;
+    letter-spacing: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #e7e7dd;
+    font-style: 20px;
+    background-color: black;
+    padding: 10px 0;
+    width: 100%;
+    opacity: 0;
+    transition: .3s;
+}
+
+#reserva .item:hover .titulo {
+    bottom: -20px;
+    opacity: 1;
+}
+
+
+
+
 /* Division Contactanos */
-/* Estilos CSS */
+
 #contactanos {
     background-size: cover;
     background-image: url(/sistema/Hotel_Perseo/imgs/index_hotel/salto_teque.jpg);
@@ -347,6 +441,7 @@ CONGIGURACION FORMULARIO
     border-radius: 12px;
 }
 
+
 /* Estilos para la sección de datos */
 #contactanos .datos {
     display: flex;
@@ -397,10 +492,6 @@ h3 {
     font-weight: bold;
 
 }
-
-
-
-
 
 
 
@@ -499,21 +590,6 @@ h3 {
     /* Centra el botón horizontalmente en el formulario */
     border-radius: 12px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media (max-width: 876px) {

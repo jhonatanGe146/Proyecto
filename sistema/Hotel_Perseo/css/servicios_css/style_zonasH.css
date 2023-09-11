@@ -153,7 +153,6 @@ aside a:hover {
     color: var(--negro);
     margin: 0 0 30px 0;
     padding-left: 10px;
-    font-family: 'Oswald', sans-serif;
     text-align: center;
     -webkit-text-stroke: 1px var(--blanco);
 }
@@ -163,7 +162,6 @@ aside a:hover {
     color: var(--negro);
     margin: 0 0 30px 0;
     padding-left: 22px;
-    font-family: 'Oswald', sans-serif;
     text-align: start;
     -webkit-text-stroke: 1px var(--blanco);
 

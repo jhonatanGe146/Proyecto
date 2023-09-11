@@ -17,9 +17,12 @@
 }
 
 body {
+    margin: auto;
     width: 100%;
+    height: 850px;
 
 }
+
 
 /* Header */
 header {
@@ -32,6 +35,7 @@ header {
     text-align: center;
 }
 
+
 a {
     display: inline-block;
     margin: 0 20px;
@@ -43,7 +47,9 @@ a {
 
 header a:hover {
     color: var(--verde);
+
 }
+
 
 .selected {
     color: var(--verde);
@@ -60,135 +66,52 @@ header a:hover {
 
 .contenedor {
     width: 100%;
+    height: 100%;
     display: flex;
-    background-image: url(/sistema/Hotel_Perseo/imgs/bar/fondo.jpg);
+    background-image: url(/sistema/Imgs/banner3.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    padding-bottom: 200px;
+    text-align: center;
+    justify-content: center;
+
 
 }
 
 /* Contenido lateral */
 .cont_lateral {
-    width: 30%;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    padding: auto;
+    width: 40%;
+    margin-top: 160px;
 }
 
-.cont_banner {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    align-items: center;
-    justify-content: center;
-}
-
-.cont_banner iframe {
-    /* position: absolute; */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin-left: 50px;
-    /* Utiliza la unidad de viewport height (vh) para ocupar toda la altura de la pantalla */
-    border: none;
-    /* Elimina el borde del iframe si es necesario */
-}
 
 /* Contenedor central */
-.cont_central {
-    width: 50%;
-    margin: auto;
-    padding-bottom: 50px;
+.contenedor .cont_central {
+    width: 45%;
+    margin-top: 100px;
 
 }
-
-.cont_central .item {
-    width: 50%;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-
-
-}
-
-.cont_central .item .bebida {
-    width: 100%;
-}
-
-.cont_central .item .cont_bebida {
-    border: white solid 2px;
-    width: 100%;
-    height: 210px;
-    display: flex;
-    flex-direction: column;
-}
-
-.cont_central .item .imgs_bar {
-    width: 50%;
-    height: 65%;
-    display: block;
-    /* Cambiamos a "display: block;" para mostrarlo inicialmente */
-    margin: auto;
-    margin-top: 10px;
-}
-
-.cont_central .item .imgs_bar img {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    border-radius: 10px;
-}
-
-.cont_central .item .descripcion {
-    width: 100%;
-    height: 35%;
-    display: block;
-    margin: auto;
-    padding: 10px;
-    overflow-y: auto;
-    /* Agrega esta línea para permitir desplazamiento vertical */
-}
-
-
-
-.cont_central .item .descripcion p {
-    font-size: 18px;
-    text-align: justify;
-    padding-top: 10px;
-    padding-left: 20px;
-    width: 100%;
-    font-weight: bold;
-}
-
-
-
-
-
 
 
 /* Contenido Lateral derecho */
 
 aside {
-    width: 20%;
+    width: 15%;
     margin: auto;
+    margin-bottom: 400px;
+
 }
 
 aside ul {
     list-style: none;
     padding: 0;
     font-size: 23px;
+
 }
 
 
 aside li a {
     display: block;
     padding: 3px 0px 0px 10px;
-    color: var(--blanco);
+    color: var(--negro);
     text-decoration: none;
     text-align: justify;
 }
@@ -203,19 +126,10 @@ aside a:hover {
 
 /* Titulos */
 
-.titulo {
-    font-size: 25px;
-    color: var(--negro);
-    margin: 0 0 30px 0;
-    padding-left: 10px;
-    text-align: start;
-    -webkit-text-stroke: 1px var(--blanco);
-}
-
 .titulo2 {
-    font-size: 50px;
+    font-size: 40px;
     color: var(--negro);
-    margin: 0 0 30px 0;
+    margin: auto;
     padding-left: 10px;
     text-align: center;
     -webkit-text-stroke: 1px var(--blanco);
@@ -225,9 +139,10 @@ aside a:hover {
     font-size: 35px;
     color: var(--negro);
     margin: 0 0 30px 0;
-    padding-left: 22px;
+
     text-align: center;
     -webkit-text-stroke: 1px var(--blanco);
+
 
 }
 
@@ -243,16 +158,12 @@ aside a:hover {
 
 
 
-p {
-    width: 70%;
-    text-align: justify;
-    color: var(--blanco);
-    font-size: 23px;
-}
-
 .parrafo {
-    width: 100%;
-    margin-left: 50px;
+
+    text-align: justify;
+    color: var(--negro);
+    font-size: 22px;
+    margin: 15px 15PX 15px 15PX;
 }
 
 @media (max-width: 876px) {
