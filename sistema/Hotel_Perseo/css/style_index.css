@@ -379,8 +379,7 @@ CONGIGURACION FORMULARIO
 /* Division Contactanos */
 
 #contactanos {
-    background-size: cover;
-    background-image: url(/sistema/Hotel_Perseo/imgs/index_hotel/salto_teque.jpg);
+    background-color: white;
 }
 
 #contactanos .formulario {
@@ -391,10 +390,13 @@ CONGIGURACION FORMULARIO
     margin: 0 auto;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #39A900;
+
 }
 
 #contactanos .formulario .info {
     margin-bottom: 20px;
+
 }
 
 /* Campos del registro */
@@ -402,10 +404,12 @@ CONGIGURACION FORMULARIO
 #contactanos .info input[type="email"] {
     width: 100%;
     border: none;
-    border-bottom: 1px solid #4d4343;
+    border-bottom: 1px solid #39A900;
+    ;
     padding: 5px;
     outline: none;
     background-color: white;
+    border-color: #39A900 solid 2px;
 }
 
 #contactanos .info textarea {
@@ -413,10 +417,12 @@ CONGIGURACION FORMULARIO
     height: 100px;
     /* Ajusta la altura según sea necesario */
     border: none;
-    border-bottom: 1px solid #4d4343;
+    border-bottom: 1px solid #39A900;
+    ;
     padding: 5px;
     outline: none;
     background-color: white;
+
 }
 
 #contactanos .info label {
@@ -427,10 +433,11 @@ CONGIGURACION FORMULARIO
 }
 
 #contactanos .formulario .btn_enviar {
-    background-color: #0b3b65;
+    background-color: #39A900;
+
     display: block;
     border: none;
-    color: #e2dddd;
+    color: #000000;
     padding: 7px;
     font-size: 16px;
     font-weight: bold;
@@ -447,7 +454,7 @@ CONGIGURACION FORMULARIO
     display: flex;
     width: 100%;
     padding: 20px;
-    color: #211f1f;
+    color: #000000;
     margin: auto;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -487,7 +494,7 @@ CONGIGURACION FORMULARIO
 
 #contactanos .datos .item .datos_ h2,
 h3 {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 20px;
     font-weight: bold;
 
@@ -500,21 +507,20 @@ h3 {
 /* Division  de registro */
 
 #registro {
-    background-size: cover;
-    background-image: url(/sistema/Hotel_Perseo/imgs/index_hotel/boquemonteAtar.jpg);
+    background-color: white;
 }
 
-/*este configuracion exclusiva para el formulario de la pagina de registro*/
 #registro .formulario {
     background-color: white;
     width: 30%;
-    height: 710px;
+    height: 720px;
     padding-left: 40px;
     padding-right: 40px;
     color: #211f1f;
     margin-left: 700px;
     margin-bottom: 70px;
     border-radius: 15px;
+    border: 2px solid #39A900;
 
 }
 
@@ -548,7 +554,7 @@ h3 {
     display: block;
     width: 100%;
     border: none;
-    border-bottom: 1px solid #4d4343;
+    border-bottom: 1px solid #39A900;
     padding: 5px;
     outline: none;
     background-color: white;
@@ -556,7 +562,7 @@ h3 {
 
 #registro .info label {
     display: block;
-    color: #2d2567;
+    color: #000000;
     font-weight: bold;
     font-size: 17px;
 }
@@ -574,10 +580,11 @@ h3 {
 
 
 #registro .formulario .btn_enviar {
-    background-color: #0b3b65;
+    background-color: #39A900;
+    ;
     display: block;
     border: none;
-    color: #e2dddd;
+    color: #000000;
     padding: 7px;
     font-size: 16px;
     font-weight: bold;
